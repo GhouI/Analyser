@@ -1,4 +1,3 @@
-"use client"
 import { useClerk } from '@clerk/nextjs';
 
 const DashboardLayout = ({
