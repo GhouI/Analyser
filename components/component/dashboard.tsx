@@ -143,21 +143,9 @@ export function Dashboard() {
                   </div>
                   <div>
                     <Label htmlFor="brand">Brand</Label>
-                    <Select id="brand" className="w-full">
-                      <option value="">Select a brand</option>
-                      <option value="brand-a">Brand A</option>
-                      <option value="brand-b">Brand B</option>
-                      <option value="brand-c">Brand C</option>
-                    </Select>
                   </div>
                   <div>
                     <Label htmlFor="ad-account">Ad Account</Label>
-                    <Select id="ad-account" className="w-full">
-                      <option value="">Select an ad account</option>
-                      <option value="account-a">Account A</option>
-                      <option value="account-b">Account B</option>
-                      <option value="account-c">Account C</option>
-                    </Select>
                   </div>
                   <div className="flex items-end">
                     <Button className="w-full">Apply Filters</Button>
@@ -172,7 +160,7 @@ export function Dashboard() {
   )
 }
 
-function CalendarClockIcon(props) {
+function CalendarClockIcon(props: any) {
   return (
     <svg
       {...props}
@@ -197,7 +185,7 @@ function CalendarClockIcon(props) {
 }
 
 
-function LinechartChart(props) {
+function LinechartChart(props: any) {
   return (
     <div {...props}>
       <ChartContainer
@@ -240,7 +228,7 @@ function LinechartChart(props) {
 }
 
 
-function Package2Icon(props) {
+function Package2Icon(props: any) {
   return (
     <svg
       {...props}
@@ -262,7 +250,7 @@ function Package2Icon(props) {
 }
 
 
-function TrendingDownIcon(props) {
+function TrendingDownIcon(props: any) {
   return (
     <svg
       {...props}
@@ -283,7 +271,7 @@ function TrendingDownIcon(props) {
 }
 
 
-function TrendingUpIcon(props) {
+function TrendingUpIcon(props: any) {
   return (
     <svg
       {...props}
