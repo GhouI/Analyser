@@ -1,4 +1,8 @@
+"use client"
 import React from 'react';
+import { SignOutButton, useUser } from '@clerk/nextjs'
+import { Dashboard } from '@/components/component/dashboard';
+
 
 interface Props {
     // Define the props for your component here
@@ -6,11 +10,12 @@ interface Props {
 
 const MyComponent: React.FC<Props> = (props) => {
     // Implement your component logic here
+    const { user } = useUser()
 
     return (
-        <div>
-            {/* Render your component UI here */}
-            This is the main-board
+        <div className="p-6">
+            <p className='text-xl font-extrabold mb-6'>Welcome back {user?.firstName}</p>
+            <Dashboard />
         </div>
     );
 };
